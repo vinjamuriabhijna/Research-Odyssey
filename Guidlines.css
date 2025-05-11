@@ -1,0 +1,36 @@
+.guidlines-page {
+  position: relative; /* Set position for child elements */
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full width */
+  display: flex; /* Enable Flexbox */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Center-align the text */
+  padding: 20px; /* Add padding for spacing */
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.guidlines-page::before {
+  content: ''; /* Add a pseudo-element for the background */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./src/assets/wallpaper.png'); /* Replace with the correct path to your image */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  filter: blur(8px); /* Apply blur effect */
+  z-index: -1; /* Place the pseudo-element behind the content */
+}
+
+.guidlines-page h1 {
+  font-size: 48px; /* Adjust font size for the heading */
+  font-weight: bold; /* Make the text bold */
+  color: white; /* Ensure the text is visible on the background */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a shadow for better readability */
+  margin-bottom: 20px; /* Add spacing below the heading */
+  z-index: 1; /* Ensure the heading is above the blurred background */
+}

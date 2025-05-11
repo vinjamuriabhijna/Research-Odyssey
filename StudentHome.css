@@ -1,0 +1,103 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100%; /* Ensure the body and html take full height */
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Stack sections vertically */
+  min-height: 100vh; /* Ensure the container takes full height */
+  background-image: url('./assets/wallpaper.png'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+/* Left Section with Buttons */
+.left-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  width: 220px; /* Slightly increase the width */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  position: absolute; /* Position the buttons */
+  left: 20px; /* Shift the buttons slightly to the right */
+  top: 50px; /* Add some spacing from the top */
+  border-radius: 8px; /* Add rounded corners */
+}
+
+.action-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px 25px; /* Increase padding for larger buttons */
+  margin-bottom: 15px; /* Add more spacing between buttons */
+  border-radius: 5px;
+  font-size: 18px; /* Increase font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Center Section */
+.center-section {
+  flex: 1; /* Take up remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.center-section h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.center-section p {
+  font-size: 18px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Footer Section */
+.footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 0; /* Ensure it doesn't overlap */
+  position: relative; /* Ensure it stays below the content */
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-heading h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-mails a,
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer-mails a:hover,
+.footer a:hover {
+  text-decoration: underline;
+}

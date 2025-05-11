@@ -1,0 +1,54 @@
+/* Styles for the Upload Page */
+.upload-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f9f9f9; /* Light background color */
+  padding: 20px;
+}
+
+.upload-page h1 {
+  font-size: 36px; /* Large heading */
+  font-weight: bold;
+  color: #333; /* Dark text color */
+  margin-bottom: 20px;
+}
+
+.upload-page p {
+  font-size: 18px; /* Medium-sized text */
+  color: #555; /* Slightly lighter text color */
+  margin-bottom: 30px;
+}
+
+.upload-page form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /* Space between form elements */
+}
+
+.upload-page input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.upload-page button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff; /* Blue button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-page button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
